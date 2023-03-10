@@ -9,7 +9,7 @@ class KoreanDrama {
     {
       required this.name, required this.broadcaster, required this.numEpisodes, required this.schedule, required this.banner, required this.imageUrls
     }
-  )
+  );
 }
 
 var koreanDramaList = [
