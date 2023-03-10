@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:week4/model/article.dart';
+import 'package:week4/more_news.dart';
 import 'package:week4/news_screen.dart';
 import 'package:week4/news_screen_detail.dart';
 
@@ -32,6 +33,9 @@ class MyApp extends StatelessWidget {
         // ),
         initialRoute: NewsScreen.routeName,
         routes: {
+          MoreNewsScreen.routeName: (context) => MoreNewsScreen(
+            article: ModalRoute.of(context)?.settings.arguments as Article,
+          ),
           NewsScreen.routeName: (context) => const NewsScreen(),
           DetailNewsScreen.routeName: (context) => DetailNewsScreen(
             article: ModalRoute.of(context)?.settings.arguments as Article
