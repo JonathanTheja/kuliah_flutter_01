@@ -45,7 +45,6 @@ app.*.map.json
 .dart_tool
 .idea
 android
-assets
 build
 ios
 linux
