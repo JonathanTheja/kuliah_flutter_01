@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:week4/model/article.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:webview_flutter_web/webview_flutter_web.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class MoreNewsScreen extends StatelessWidget {

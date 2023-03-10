@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:week4/model/article.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:week4/more_news.dart';
 
 class DetailNewsScreen extends StatelessWidget {
   static const routeName='/detail_new_list';
@@ -36,7 +37,9 @@ class DetailNewsScreen extends StatelessWidget {
                   const Divider(color: Colors.grey),
                   Text('Date: ${article.publishedAt}'),
                   const SizedBox(height: 10),
-                  ElevatedButton(onPressed: (){},
+                  ElevatedButton(onPressed: (){
+                    Navigator.pushNamed(context, MoreNewsScreen.routeName,arguments:article);
+                  },
                     child: const Text('More...'))
                 ],
               )
